@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic CRUD Operation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Basic CRUD Operations</h1>
+    </header>
+
+    <div class="container">
+        <div class="login-box">
+            <h2>Submit Data</h2>
+            <form id="loginForm">
+                <input type="text" id="name" placeholder="Name" required>
+                <input type="email" id="email" placeholder="Email Address" required>
+                <input type="password" id="password" placeholder="Password" required>
+                <input type="file" id="image" accept="image/*">
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="container">
+        <table id="dataTable">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Password</th>
+                    <th>Image</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+
+    <footer>
+        &copy; 2025 All Rights Reserved | Your Website Name
+    </footer>
+
+    <script src="script.js" defer></script>
+    <script src="api.js" defer></script>
+</body>
+</html>
